@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Tinos:ital@0;1&display=swap" rel="stylesheet">
+        <script src="./js/function.js" defer></script>
+        <script src="./js/checkbox.js" defer></script>
+        <script src="./js/main.js" defer></script>
+        <title>Calcul </title>
+    </head>
+
+    <body>
+        <main class="container">
+            <section>
+                <h1 class="title">Calculer et convertir votre salaire brut en net</h1>
+                <div>
+                    <form method="post" action="">
+                        <table class="table">
+                            <thead>
+                                <tr class="border">
+                                    <th>Salaire</th>
+                                    <th>Brut</th>
+                                    <th>Net</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border">
+                                    <th>Annuel</th>
+                                    <td>
+                                        <input class="input-number" name="input1" type="number" value="0"> €
+                                    </td>
+                                    <td>
+                                        <input class="input-number" type="number" value="0"> €
+                                    </td>
+                                </tr>
+                                <tr class="border">
+                                    <th>Mensuel</th>
+                                    <td>
+                                        <input class="input-number" type="number" value="0"> €
+                                    </td>
+                                    <td>
+                                        <input class="input-number" type="number" value="0"> €
+                                    </td>
+                                </tr>
+                                <tr class="border">
+                                    <th>Journalier </th>
+                                    <td>
+                                        <input class="input-number" type="number" value="0"> €
+                                    </td>
+                                    <td>
+                                        <input class="input-number" type="number" value="0"> €
+                                    </td>
+                                </tr>
+                                <tr class="border">
+                                    <th>Horaires</th>
+                                    <td>
+                                        <input class="input-number" type="number" value="0"> €
+                                    </td>
+                                    <td>
+                                        <input class="input-number" type="number" value="0"> €
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="options">
+                                <input type="button" class="button-smic" value="Appliquer le SMIC">
+                            <button class="option">
+                                Taux % :
+                                <input type="text" class="input-rate input-option" disabled value="23">
+                            </button>
+                            <button class="option">
+                                Mois :
+                                <input type="text" class="input-month input-option" disabled value="12">
+                            </button>
+                            <button class="option">
+                                Heures :
+                                <input type="text" class="input-hour input-option" disabled value="35"> 
+                            </button>
+                        </div>
+                        
+                        <div class="statuts">
+                            <div class="statut">
+                                <label>
+                                    Non cadre :
+                                </label>
+                                <input class="no-frame" type="checkbox" checked name="check-statut" id="check-statut-1">
+                            </div>
+                            <div class="statut">
+                                <label>
+                                    Cadre :
+                                </label>
+                                <input class="frame" type="checkbox" name="check-statut" id="check-statut-2">
+                            </div>
+                            <div class="statut">
+                                <label>
+                                    Fonctionnaire :
+                                </label>
+                                <input class="official" type="checkbox" name="check-statut" id="check-statut-3">
+                            </div>
+                            <div class="statut">
+                                <label class="statut-label">
+                                    Portage salariale :
+                                </label>
+                                <input class="salary-portage" type="checkbox" name="check-statut" id="check-statut-4">
+                            </div>
+                            <div class="statut">
+                                <label>
+                                    Indépendant / Société :
+                                </label>
+                                <input class="independent" type="checkbox" name="check-statut" id="check-statut-5">
+                            </div>
+                            <div class="statut">
+                                <label>
+                                    Auto-Entrepreneur :
+                                </label>
+                                <input class="auto-entrepreneur" type="checkbox" name="check-statut" id="check-statut-6">
+                            </div>
+                        </div>
+                    </form>
+                    <p class="text-footer">Cliquez sur n'importe quel nombre pour calculer votre salaire.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+           
+        </footer>
+    </body>
+</html>
+
